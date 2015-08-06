@@ -1,0 +1,42 @@
+/*===============================coustmize css========================================*/
+
+/*........................login page......................*/
+.loginimage{
+padding-bottom:1em;
+padding-top:4em;
+}
+
+.img-thumb{
+    display: inline-block;
+  max-width:150px;
+  height: 150px;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+
+}
+
+/*..............home_resc............*/
+
+#hot-title {
+    background-color: #1D7CF2;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+#hot-img {
+  max-height:140px; 
+  width:100%;
+} 
+.h:hover{
+    background-color: #c1c1c1 !important;
+    
+    
+}

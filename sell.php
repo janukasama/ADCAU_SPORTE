@@ -118,7 +118,7 @@ switch ($_SESSION['action'])
 			$payment_text = implode(', ', $payment);
 			// set time back to GMT
 			$a_starts = (empty($start_now) || $_SESSION['SELL_action'] == 'edit') ? ($a_starts - $system->tdiff) : time();
-			$a_ends = $a_starts + ($duration * 24 * 60 * 60);
+			$a_ends = $a_starts + ($duration * 168 * 60 * 60);
 			// get fee
 			$fee_data = get_fee($minimum_bid, false);
 			$fee = $fee_data[0];

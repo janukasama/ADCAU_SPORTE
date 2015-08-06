@@ -264,7 +264,7 @@ $template->assign_vars(array(
 
 include 'header.php';
 $template->set_filenames(array(
-		'body' => 'home.tpl'
+		'body' => 'home_res.tpl'
 		));
 $template->display('body');
 include 'footer.php';

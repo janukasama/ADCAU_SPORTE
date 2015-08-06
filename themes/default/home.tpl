@@ -43,7 +43,7 @@
         <!-- BEGIN hotitems -->
             <div style="float:left;display:block;width:180px;margin:5px;background-color:#FFFEEE;border:#CCCCCC 1px solid;padding:5px;min-height:150px;">
                 <div style="display:block;" align="center"><img src="{hotitems.IMAGE}"></div>
-                <div style="display:block;" align="center"><a href="{SITEURL}item.php?id={hotitems.ID}">{hotitems.TITLE}</a><br>{hotitems.BID}</div>
+                <div style="display:block;" align="center"><a href="{SITEURL}item.php?id={hotitems.ID}">{hotitems.TITLE}</a><br></div>
             </div>
         <!-- END hotitems -->
         </td>
