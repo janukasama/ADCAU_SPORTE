@@ -29,7 +29,7 @@ ul	{ padding-left: 20px; list-style: url(img/bullet.gif) none; line-height: 1em;
 /* NEW CSS (eventaully ill remove all the junk above) */
 body {
 	color: #131313;
-	background-color:#D0E2EC;
+	background-color:#fff;
 	margin: 0 auto;
 }
 
@@ -349,6 +349,3 @@ padding-top:4em;
   max-height:140px; 
   width:100%;
 } 
-html{
-background-color: #fff;
-}
