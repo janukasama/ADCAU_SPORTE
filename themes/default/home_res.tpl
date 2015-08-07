@@ -6,6 +6,7 @@
         <!-- <div class="col-sm-6 col-md-12 ">-->
         <!-- IF B_HOT_ITEMS -->
         <!-- BEGIN hotitems -->
+         <a href="{SITEURL}item.php?id={hotitems.ID}" style="text-decoration: none;">
         <div class="thumbnail col-sm-6 col-md-3 item-data " id="block">
             <div id="hot-title">
                 <h4>{hotitems.TITLE}</h4>
@@ -28,6 +29,7 @@
             </div>
             <div class="footer" style="background-color:#1D7CF2; border-radius:0px 0px 3px 3px;"></div>
         </div>
+             <a
 
         <!-- ENDIF -->
         <!-- END hotitems -->
