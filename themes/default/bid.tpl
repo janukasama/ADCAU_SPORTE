@@ -12,7 +12,7 @@ $(document).ready(function(){
 <!-- ENDIF -->
 <div class="row" style="margin:30px;">
 		<div class="col-md-12 col-sm-12" style="text-align:center;">
-             <div class="panel panel-primary" >
+             <div class="panel panel-primary" style="boarder:0px;" >
              <div class="panel-heading"><b>{TITLE}</b></div>
              <div class="panel-body" >
 <!-- IF PAGE eq 1 -->

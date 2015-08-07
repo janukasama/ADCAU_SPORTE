@@ -1,27 +1,6 @@
-/*===============================coustmize css========================================*/
+/*----------------------------------- CUSTOMIZE CSS FILE ---------------------------------------------*/
 
-/*........................login page......................*/
-.loginimage{
-padding-bottom:1em;
-padding-top:4em;
-}
-
-.img-thumb{
-    display: inline-block;
-  max-width:150px;
-  height: 150px;
-  padding: 4px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: all .2s ease-in-out;
-       -o-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-
-}
-
-/*..............home_resc............*/
+/*home_res*/
 
 #hot-title {
     background-color: #1D7CF2;
@@ -29,14 +8,46 @@ padding-top:4em;
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
-
+    border-radius: 3px 3px 0px 0px;
 }
 #hot-img {
-  max-height:140px; 
-  width:100%;
-} 
-.h:hover{
-    background-color: #c1c1c1 !important;
+   /* max-height: 140px;
+    width: 100%;*/
+         border-radius: 3px 3px 0px 0px;
     
+
+}
+.bit-img {
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 20px 35px 20px 35px; 
     
+}
+.item-data {
+     border:0px;
+/*
+     transition: width 1s;
+    -moz-transition: width 1s; 
+    -webkit-transition: width 1s; 
+    -o-transition: width 1s;
+    -ms-transition: width 1s;
+    
+*/
+
+}
+
+.item-data:hover
+{
+   
+}
+
+.item-data ul li{
+    margin: -9px;
+}
+
+#block{
+
+ background: #ddd;
 }

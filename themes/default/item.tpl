@@ -29,7 +29,7 @@ $(document).ready(function() {
 <div class="row" style="margin:40px;">
 <!--      panel-->
                
-           <div class="col-md-12 col-sm-12 titTable1">        
+           <div class="col-md-12 col-sm-12 titTable1" style="text-align:center;">        
            <div class="panel panel-primary" >
             <div class="panel-heading"><b>{TITLE}</b></div>
              <div class="panel-body" >
