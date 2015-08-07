@@ -1,4 +1,4 @@
-<div style="heigh:20px;width:100%;"></div>
+<div style="width:100%;height:50px;"></div>
 <div class="container">
 
     <div class="row">
