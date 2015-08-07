@@ -9,7 +9,7 @@
 			"WeBid" linked to www.webidsupport.com. If you must remove thte copyright message pelase make
             a donation at http://www.webidsupport.com/donate.php to help pay for future developments
 		-->
-		<B>Powered by <a href="http://www.virtusa.com/">Virtusa</a> &copy; 2015 - 2016 <a href="http://www.Virtusa.com/">ADCAU SPORTE</a></B>
+		<B>Powered by <a href="http://www.virtusa.com/">Virtusa</a> &copy; 2015 - 2016 <a href="http://herokuadcau.herokuapp.com/user_login.php">ADCAU SPORTE</a></B>
 	</div>
 </div>
 </body>
