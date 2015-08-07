@@ -29,7 +29,7 @@ ul	{ padding-left: 20px; list-style: url(img/bullet.gif) none; line-height: 1em;
 /* NEW CSS (eventaully ill remove all the junk above) */
 body {
 	color: #131313;
-	background-color:#fff;
+	background-color:#D0E2EC;
 	margin: 0 auto;
 }
 
@@ -205,11 +205,11 @@ a:hover {
 }
 
 .titTable1 {
-	background-color: #B4D3EC;
+	background-color: #fff;
 	text-align: center;
 	padding: 5px;
 	font-weight: bold;
-	border: 1px solid #C9C9C9;
+	border: 0px solid #C9C9C9;
 }
 
 .titTable2 {
