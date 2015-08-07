@@ -26,7 +26,7 @@ $(document).ready(function() {
 </script>
 <!-- ENDIF -->
 
-<div class="row" style="margin:20px;">
+<div class="row" style="margin:40px;">
 <!--      panel-->
                
            <div class="col-md-12 col-sm-12 titTable1">        
