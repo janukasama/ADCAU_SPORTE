@@ -161,13 +161,3 @@ section h3.section-subheading {
         margin: 0 0 30px;
     }
 }
-.log{
-text-align:right;
-    padding-right:40px;
-    padding-top: 2px;
-    background-color:#F4F4F4;
-    width: 100%;
-    border-bottom:1px #ddd solid;
-    height: 25px;
-   
-    }

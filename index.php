@@ -1,7 +1,4 @@
 <?php
-
-
-
 /***************************************************************************
  *   copyright				: (C) 2008 - 2014 WeBid
  *   site					: http://www.webidsupport.com/
@@ -17,8 +14,6 @@
 
 include 'common.php';
 include $main_path . 'language/' . $language . '/categories.inc.php';
-
-
 
 // Run cron according to SETTINGS
 if ($system->SETTINGS['cron'] == 2)

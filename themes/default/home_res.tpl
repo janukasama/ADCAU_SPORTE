@@ -1,36 +1,16 @@
- <body>
-     <div class="log">
-<!-- IF B_LOGGED_IN -->
-<!--
-            <li><a href="{SITEURL}user_menu.php?">{L_622}</a></li>
-            <li><a href="{SSLURL}logout.php?">{L_245}</a></li>
-
--->
-            
-           <!-- ELSE -->
-<!--
-            <li><a href="{SSLURL}register.php?">{L_235}</a></li>
-            <li><a href="{SSLURL}user_login.php?">{L_052}</a></li>
--->
-              <p>You are not Login,Please <a href="../../user_login.php">Login</a></p>
-             <!-- ENDIF -->
-             <!-- IF B_BOARDS -->
-			
-            <!-- ENDIF -->
-         </div>
 <div class="container">
 
     <div class="row" style="margin-top:-90px;">
-        <section id="portfolio" >
+        <section id="portfolio">
             <!-- IF B_HOT_ITEMS -->
             <!-- BEGIN hotitems -->
                <div class="col-md-3 col-sm-6 portfolio-item">
                     <a href="{SITEURL}item.php?id={hotitems.ID}" class="portfolio-link" data-toggle="modal">
-                        <div class="thumbnail" style="border:0px;">
+                        <div class="thumbnail">
                             
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
-                                   <b> <i class="" style="font-size:5em;color:#fff;"></i></b>
+                                   <b> <i class="glyphicon glyphicon-plus" style="font-size:5em;color:#fff;"></i></b>
                                 </div>
                             </div>
                             <div class="caption"
@@ -44,12 +24,12 @@
                             <div class="portfolio-caption">
                     
                               <!--  <p>current Bid : {hotitems.BID}</p>-->
-                                
-                     <ul class="list-group" style="text-align:center;">
-                       
-                        <li class="list-group-item" style="border:0px;">{hotitems.ENDS} Left</li>
-                         <li class="list-group-item" style="border:0px;">Current Bid : {hotitems.BID}</li>
-                       </ul>
+                                <p>{hotitems.ENDTIMES}</p>
+                                <p>2015/08/05</p>
+                                <p>{hotitems.ENDS}</p>
+                                <p>{hotitems.ENDS}</p>
+                                <p>Current Bid:{hotitems.BID}</p>
+                               
                             </div>
                             
                            
@@ -73,3 +53,22 @@
     
     
     
+<script>
+    $(document).ready(function() {
+
+        $('.item-data').hover(
+            function() {
+                $(this).fadeOut(500);
+                $(this).fadeIn(50);
+
+
+            },
+
+            function() {
+                $(this).css({
+
+                });
+            }
+        );
+    });
+</script>

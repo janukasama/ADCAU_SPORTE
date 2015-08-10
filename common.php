@@ -19,8 +19,6 @@ define('InWeBid', 1);
 define('TrackUserIPs', 1);
 date_default_timezone_set('UTC'); // to make times more consistant
 
-
-
 // file check & 
 if(!@include('includes/config.inc.php'))
 {
@@ -92,8 +90,7 @@ if (!$user->logged_in && isset($_COOKIE['WEBID_RM_ID']))
 if($user->logged_in)
 {
 	$system->tdiff = ($user->user_data['timecorrection'] + date('I')) * 3600;
-	$system->ctime = time() + $system->tdiff; 
-    
+	$system->ctime = time() + $system->tdiff;
 }
 
 // delete REDIRECT_AFTER_LOGIN value automatically so you are never forwarded to an old page

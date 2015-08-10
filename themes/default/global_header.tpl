@@ -23,14 +23,16 @@
 <link rel="alternate" type="application/rss+xml" title="{L_931}" href="{SITEURL}rss.php?feed=8">
     
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   
     
-<link rel="stylesheet" type="text/css" href="{INCURL}themes/{THEME}/newStyle.css">
-
+<link rel="stylesheet" type="text/css" href="{INCURL}themes/{THEME}/css/bootstrap.css">    
+<!--<link rel="stylesheet" type="text/css" href="{INCURL}themes/{THEME}/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="{INCURL}themes/{THEME}/newStyle.css"> 
 <script type="text/javascript" src="{INCURL}loader.php?js={JSFILES}"></script>
 <!-- IF LOADCKEDITOR -->
 	<script type="text/javascript" src="{INCURL}ckeditor/ckeditor.js"></script>
@@ -62,5 +64,80 @@ $(document).ready(function() {
 });
 </script>
 </head>
+<body>
+<div class="wrapper rounded-top rounded-bottom">
+	<div class="splitbox">
+    	<div class="leftside">
+    		<a class="" href="{SITEURL}index.php">{LOGO}</a>
+        </div>
+    	<div class="rightside">
+        	{BANNER}
+        </div>
+    </div>
+	<div class="counters">
+        <span class="leftside"><!-- IF B_LOGGED_IN -->{L_200} {YOURUSERNAME}. <a href="{SSLURL}logout.php?">{L_245}</a>
+            <!-- ENDIF --></span>
+        <span class="rightside">{HEADERCOUNTER}</span>
+	</div>
+  <!--remove->
+<!--remove->
+  
+	<div class="navbar">
+    	<!--<div>
+            <form name="search" action="{SITEURL}search.php" method="get">
+            	<select class="" name="id">
+					{SELECTION_BOX}
+            	</select>
+                <input type="search" name="q" size="50" value="{Q}" placeholder="{L_861}">
+                <input type="submit" name="sub" value="{L_399}" class="button">
+                <a href="{SITEURL}adsearch.php">{L_464}</a>
+            </form>
+		</div>
+    </div>-->
+    
+    
+     <nav class="navbar navbar-default">
+      <div class="container-flut">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                  data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <!-- <a class="navbar-brand" href="#">Adcau Sporte</a>-->
+        </div>
+          
+        <div id="navbar" class="collapse navbar-collapse">
+            
+          <ul class="nav navbar-nav">
+              
+            <li><a href="{SITEURL}index.php?">{L_166}</a></li>
+            <!-- IF B_CAN_SELL -->
+			<li><a href="{SITEURL}select_category.php?">{L_028}</a></li>
+            <!-- ENDIF -->
+           <!-- IF B_LOGGED_IN -->
+<!--
+            <li><a href="{SITEURL}user_menu.php?">{L_622}</a></li>
+            <li><a href="{SSLURL}logout.php?">{L_245}</a></li>
 
-
+-->
+            
+           <!-- ELSE -->
+<!--
+            <li><a href="{SSLURL}register.php?">{L_235}</a></li>
+            <li><a href="{SSLURL}user_login.php?">{L_052}</a></li>
+-->
+              <!--<p>Please Login</p>-->
+             <!-- ENDIF -->
+             <!-- IF B_BOARDS -->
+			<li><a href="{SITEURL}boards.php">{L_5030}</a></li>
+            <!-- ENDIF -->
+            <li><a href="{SITEURL}help.php" alt="faqs" class="new-window">{L_148}</a></li> 
+          </ul>
+            
+         
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

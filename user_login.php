@@ -115,11 +115,10 @@ if (isset($_POST['action']) && isset($_POST['username']) && isset($_POST['passwo
 			{
 				$URL = str_replace('\r', '', str_replace('\n', '', $_SESSION['REDIRECT_AFTER_LOGIN']));
 				unset($_SESSION['REDIRECT_AFTER_LOGIN']);
-               
 			}
 			else
 			{
-				$URL = 'index.php';
+				$URL = 'user_menu.php';
 			}
 
 			header('location: ' . $URL);
@@ -139,7 +138,7 @@ $template->assign_vars(array(
 
 include 'header.php';
 $template->set_filenames(array(
-		'body' => 'user_login_mobile.tpl'
+		'body' => 'user_login.tpl'
 		));
 $template->display('body');
 include 'footer.php';
