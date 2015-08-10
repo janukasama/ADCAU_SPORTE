@@ -1,60 +1,75 @@
-<div style="width:100%;height:50px;"></div>
+ <body>
+     <div class="log">
+<!-- IF B_LOGGED_IN -->
+<!--
+            <li><a href="{SITEURL}user_menu.php?">{L_622}</a></li>
+            <li><a href="{SSLURL}logout.php?">{L_245}</a></li>
+
+-->
+            
+           <!-- ELSE -->
+<!--
+            <li><a href="{SSLURL}register.php?">{L_235}</a></li>
+            <li><a href="{SSLURL}user_login.php?">{L_052}</a></li>
+-->
+              <p>You are not Login,Please <a href="http://localhost/sample/user_login.php">Login</a></p>
+             <!-- ENDIF -->
+             <!-- IF B_BOARDS -->
+			
+            <!-- ENDIF -->
+         </div>
 <div class="container">
 
-    <div class="row">
-
-        <!-- <div class="col-sm-6 col-md-12 ">-->
-        <!-- IF B_HOT_ITEMS -->
-        <!-- BEGIN hotitems -->
-         <a href="{SITEURL}item.php?id={hotitems.ID}" style="text-decoration: none;">
-        <div class="thumbnail col-sm-6 col-md-3 item-data " id="block">
-            <div id="hot-title">
-                <h4>{hotitems.TITLE}</h4>
-            </div>
-            <img src="{hotitems.IMAGE}" class="img-thumbnail bit-img" />
-            <div class="caption">
-
-                <div class="item-data">
-                    <ul class="list-group" style="text-align:center;">
-                        <li class="list-group-item">2015/08/05</li>
-                        <li class="list-group-item">{hotitems.ENDS}</li>
-                        <li class="list-group-item"><a href="{SITEURL}item.php?id={hotitems.ID}">{hotitems.TITLE}</a>
-                        </li>
-                        <li class="list-group-item">current Bid : {hotitems.BID}</li>
-
-                    </ul>
-
+    <div class="row" style="margin-top:-90px;">
+        <section id="portfolio" >
+            <!-- IF B_HOT_ITEMS -->
+            <!-- BEGIN hotitems -->
+               <div class="col-md-3 col-sm-6 portfolio-item">
+                    <a href="{SITEURL}item.php?id={hotitems.ID}" class="portfolio-link" data-toggle="modal">
+                        <div class="thumbnail" style="border:0px;">
+                            
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                   <b> <i class="" style="font-size:5em;color:#fff;"></i></b>
+                                </div>
+                            </div>
+                            <div class="caption"
+                                 style="background-color:#1D7CF2;height:50px; border-radius:2px 2px 0px 0px;">
+                                <h4 style="text-align:center;color:#fff" >{hotitems.TITLE}</h4>
+                            </div>
+                            <img src="{hotitems.IMAGE}" alt="dream" class=""
+                                 style="margin-top:10px;min-height:150px;max-height:150px;">
+                            <hr>
+                            
+                            <div class="portfolio-caption">
+                    
+                              <!--  <p>current Bid : {hotitems.BID}</p>-->
+                                
+                     <ul class="list-group" style="text-align:center;">
+                       
+                        <li class="list-group-item" style="border:0px;">{hotitems.ENDS} Left</li>
+                         <li class="list-group-item" style="border:0px;">Current Bid : {hotitems.BID}</li>
+                       </ul>
+                            </div>
+                            
+                           
+                              <div class="caption"
+                                 style="aglign:center;background-color:#1D7CF2;height:10px; border-radius:0px 0px 2px 2px;">
+                                  <p class="text-muted"></p>
+                                 
+                            </div>
+                        </div>
                 </div>
-
-            </div>
-            <div class="footer" style="background-color:#1D7CF2; border-radius:0px 0px 3px 3px;"></div>
-        </div>
-             <a
-
-        <!-- ENDIF -->
-        <!-- END hotitems -->
-        <!-- </div>-->
+            <!-- ENDIF -->
+            <!-- END hotitems -->
 
 
+        </section>
     </div>
 
 </div>
-<script>
-    $(document).ready(function() {
 
-        $('.item-data').hover(
-            function() {
-                $(this).fadeOut(500);
-                $(this).fadeIn(50);
-             
 
-            },
-           
-            function() {
-                $(this).css({
-          
-                });
-            }
-        );
-    });
-</script>
+    
+    
+    
