@@ -17,10 +17,6 @@ include 'common.php';
 
 $NOW = time();
 
-
-
-
-
 if ($system->SETTINGS['https'] == 'y' && $_SERVER['HTTPS'] != 'on')
 {
 	$sslurl = str_replace('http://', 'https://', $system->SETTINGS['siteurl']);

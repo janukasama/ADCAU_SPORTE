@@ -12,7 +12,7 @@
             <li><a href="{SSLURL}register.php?">{L_235}</a></li>
             <li><a href="{SSLURL}user_login.php?">{L_052}</a></li>
 -->
-              <p>You are not Login,Please <a href="http://localhost/sample/user_login.php">Login</a></p>
+              <p>You are not Login,Please <a href="../../user_login.php">Login</a></p>
              <!-- ENDIF -->
              <!-- IF B_BOARDS -->
 			
