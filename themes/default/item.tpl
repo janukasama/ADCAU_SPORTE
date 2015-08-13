@@ -27,67 +27,84 @@ $(document).ready(function() {
 <!-- ENDIF -->
 <div class="content">
 	<div class="tableContent2">
-	 <div class="padding"><b>{L_041}:</b> {TOPCATSPATH}</div>
-	 <div class="titTable2 rounded-top rounded-bottom">
-	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
-		<tr>
-			<td>
-            	{TITLE}
-<!-- IF SUBTITLE ne '' -->
-            	<p class="smallspan">{SUBTITLE}</p>
-<!-- ENDIF -->
-            </td>
-			<td align="right">{L_113}: {ID}</td>
-		</tr>
-<!-- IF B_CANEDIT -->
-		<tr>
-			<td colspan="2">
-	  			[<a href="{SITEURL}edit_active_auction.php?id={ID}">{L_30_0069}</a>]
-            </td>
-		</tr>
-<!-- ENDIF -->
-	  </table>
-	</div>
-	<div class="titTable3">
-		{VIEW_HISTORY1}
-		<a href="{SITEURL}friend.php?id={ID}">{L_106}</a> | 
-<!-- IF B_CANCONTACTSELLER -->
-		<a href="{SITEURL}send_email.php?auction_id={ID}">{L_922}</a> | 
-<!-- ENDIF -->
-<!-- IF B_LOGGED_IN -->
-		<a href="{SITEURL}item_watch.php?{WATCH_VAR}={ID}">{WATCH_STRING}</a>
-<!-- ELSE -->
-		<a href="{SITEURL}user_login.php?">{L_5202}</a>
-<!-- ENDIF -->
-	</div>
-<!-- IF B_USERBID -->
-	<div class="{YOURBIDCLASS}">
-		{YOURBIDMSG}
+	
+	
+   <div class="breadcrumb" style="color:white !important;">
+            <a href="{SITEURL}friend.php?id={ID}" style="color:white;">{L_106}</a> |
+            <!-- IF B_CANCONTACTSELLER -->
+            <a href="{SITEURL}send_email.php?auction_id={ID}" style="color:white;">{L_922}</a> |
+            <!-- ENDIF -->
+            <!-- IF B_LOGGED_IN -->
+            <a href="{SITEURL}item_watch.php?{WATCH_VAR}={ID}" style="color:white;">{WATCH_STRING}</a>
+            <!-- ELSE -->
+            <a href="{SITEURL}user_login.php?" style="color:white;">{L_5202}</a> 
+            <!-- ENDIF -->
+
+            <!-- IF B_USERBID -->
+
+            <span style="color:#00ff00 !important; font-size:14px; font-weight:300px; float:right; margin-right:30px;">{YOURBIDMSG}</span>
+
+            <!-- ENDIF -->
+
+        </div>
+        
+        
+        
+        
+<!--        sameera styles-->
+        
+        
+        
+        
+        
+        
+	<br>
+	<div class="table2">
+
+	<br>
+
+<!-- IF B_HAS_QUESTIONS -->
+	<div class="tableContent2">
+	  <div class="titTable4">
+		<a name="questions"></a>{L_552}
+	  </div>
+	  <div class="table2">
+	<!-- BEGIN questions -->
+      	<b>{L_5239}</b>
+        <div class="smallspan padding">
+		<!-- BEGIN conv -->
+        	<p><b>{questions.conv.BY_WHO}</b>: {questions.conv.MESSAGE}</p>
+        <!-- END conv -->
+        </div>
+    <!-- END questions -->
+	  </div>
 	</div>
 <!-- ENDIF -->
 	<br>
-	<div class="table2">
-	<table width="100%" border="0" cellpadding="0" cellspacing="0">
-	  <tr>
-		<td class="titTable5" valign="top">
-		  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+        
+      <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Panel heading without title</div>
+                  <div class="panel-body" style="min-height:270px;">
+                   
+                      
+                      <table width="100%" border="0" cellpadding="5" cellspacing="0" >
 			<tr>
 <!-- IF B_HASIMAGE -->
 			  <td width="10%" valign="top">
 				<table bgcolor="#ffffff">
 				  <tr>
-					<td align='center'>
-					  <img src="{SITEURL}getthumb.php?w={THUMBWIDTH}&fromfile={PIC_URL}" border="0" align="center"><br>
-	<!-- IF B_HASGALELRY -->
-					  <a href="#gallery"><img src="{SITEURL}images/gallery.gif" border="0" alt="gallery"> {L_694}</a>
-	<!-- ENDIF -->
+					<td class="thumbnail" align='center' style="width:200px;height:200px;">
+					  <img style="width:180px;height:180px;" src="{SITEURL}getthumb.php?w={THUMBWIDTH}&fromfile={PIC_URL}" border="0" align="center"><br>
+
 					</td>
 				  </tr>
 				</table>
 			  </td>
 <!-- ENDIF -->
 			  <td width="60%" valign="top">
-				<table width="100%" align="center" cellpadding="0" cellspacing="0" valign="top" border="0">
+				<table width="100%" align="center" cellpadding="0" cellspacing="0" valign="top" border="0" style="background-color:#ddd;min-height:200px;">
 				  <tr>
 					<td>&nbsp;
 					</td>
@@ -190,12 +207,36 @@ $(document).ready(function() {
 			  </td>
 			</tr>
 		  </table>
+                      
+                      
+                  </div>
+                </div>       
+
+              </div>  
+
+          
+          
+          
+          
+          
+          
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">{L_30_0209}</div>
+                  <div class="panel-body">
+                  
+                      
+                      
+                      	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+		<td class="titTable5" valign="top">
+		  
 		</td>
 		<td width="2%">&nbsp;</td>
 		<td width="37%" valign="top" bgcolor="#ffffff" align="left">
-          <div class="titTable1">
-          	<b>{L_30_0209}</b>
-          </div>
+         
+            <div style="background-color:#ddd;height:150px;padding:10px;marging-bottom:10px;">
+
 		  <table width="100%" cellspacing="0" cellpadding="4" border="0" bgcolor="#ffffff">
 			<tr>
 			  <td width="3%" class='table2'>&nbsp;</td>
@@ -224,7 +265,11 @@ $(document).ready(function() {
 			  </td>
 			</tr>
 		  </table>
-		  <div class="titTable1">
+            </div>
+           
+            
+            <div style="background-color:#ccc;height:90px;padding:10px;">
+		  <div class="">
 <!-- IF B_HASENDED eq false and B_CAN_BUY -->
 	<!-- IF B_NOTBNONLY -->
 				<table width="100%" border=0 cellpadding=2 cellspacing=0 border=1>
@@ -238,7 +283,7 @@ $(document).ready(function() {
 		<!-- IF QTY gt 1 -->
 							{L_284}: <input type="text" name="qty" size=15 /> {QTY} {L_5408}<br>
 		<!-- ENDIF -->
-							{L_121} <input type="text" name="bid" size="15">
+							{L_121} <input class="form-control" style="width:400px;" type="text" name="bid" size="15">
 		<!-- IF ATYPE eq 1 -->
 						{L_124}: {NEXTBID}
 						 <br>
@@ -253,7 +298,7 @@ $(document).ready(function() {
 					 <input type="hidden" name="category" value="{CAT_ID}" >
 					 <input type="hidden" name="id" value="{ID}">
                      <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
-					 <input type="submit" name="" value="{L_30_0208}" class="button">
+					 <input type="submit"  name="" value="{L_30_0208}" class="btn btn-success">
 					</td>
 				  </tr>
 				</form>
@@ -263,93 +308,106 @@ $(document).ready(function() {
 	<!-- ENDIF -->
 <!-- ENDIF -->
 		  </div>
+                
+                </div>
 		</td>
 	  </tr>
 	</table>
-	<br>
-	<div class="tableContent2">
-	  <div class="titTable4">
-		<a name="description"></a>{L_018}
-	  </div>
-	  <div class="table2">
-		{AUCTION_DESCRIPTION}
-	  </div>
-	</div>
-<!-- IF B_HAS_QUESTIONS -->
-	<div class="tableContent2">
-	  <div class="titTable4">
-		<a name="questions"></a>{L_552}
-	  </div>
-	  <div class="table2">
-	<!-- BEGIN questions -->
-      	<b>{L_5239}</b>
-        <div class="smallspan padding">
-		<!-- BEGIN conv -->
-        	<p><b>{questions.conv.BY_WHO}</b>: {questions.conv.MESSAGE}</p>
-        <!-- END conv -->
-        </div>
-    <!-- END questions -->
-	  </div>
-	</div>
-<!-- ENDIF -->
-<!-- IF B_HASGALELRY -->
-	<div class="tableContent2">
-		<div class="titTable4">
-			<a name="gallery"></a>{L_663}
-		</div>
-		<div class="table2" style="text-align:center; overflow-y:auto;" id="gallery">
-		<table>
-			<tr>
-		<!-- BEGIN gallery -->
-				<td>
-				<a href="{SITEURL}{UPLOADEDPATH}{ID}/{gallery.V}" title="">
-					<img src="{SITEURL}getthumb.php?w={THUMBWIDTH}&fromfile={UPLOADEDPATH}{ID}/{gallery.V}" border="0" width="{THUMBWIDTH}" hspace="10">
-				</a>
-				</td>
-		<!-- END gallery -->
-			</tr>
-		</table>
-		</div>
-	</div>
-<!-- ENDIF -->
-	<br>
-	<div class="titTable4">
-	  {L_724}
-	</div>
+                      
+                  </div>
+                </div>       
+
+              </div>  
+        
+      </div>
+
+        
+        
+        
+       <!--addvance infomation boostr--> 
+      <div class="row">
+          <div class="col-md-12">
+
+                <div class="panel panel-primary">
+                  <div class="panel-heading">{L_724}</div>
+                  <div class="panel-body">
+                  
+                     
 	<table width="100%" border="0" cellpadding="0" cellspacing="0">
 	  <tr>
 		<td>
 		  <div class="tableContent2">
-			<div class="table2">
-<!-- IF COUNTRY ne '' or ZIP ne '' -->
-			  <b>{L_014}:</b> {COUNTRY} ({ZIP})<br>
-<!-- ENDIF -->
-			  <b>{L_025}:</b> {SHIPPING}, {INTERNATIONAL}<br>
-<!-- IF SHIPPINGTERMS ne '' -->
-			  <table border="0" cellpadding="0" cellspacing="0">
-				<tr>
-				  <td valign="top"><b>{L_25_0215}:</b>&nbsp;</td>
-				  <td valign="top">{SHIPPINGTERMS}</td>
-				</tr>
-			  </table>
-<!-- ENDIF -->
-			  <br>
-			  <b>{L_026}:</b> {PAYMENTS}<br>
-<!-- IF ! B_BUY_NOW_ONLY -->
-			  <b><!-- IF ATYPE eq 1 -->{L_127}<!-- ELSE -->{L_038}<!-- ENDIF -->:</b> {MINBID}<br>
-<!-- ENDIF -->
-			  <br>
-			  <b>{L_111}:</b> {STARTTIME}<br>
-			  <b>{L_112}:</b> {ENDTIME}<br>
-			  <b>{L_113}:</b> {ID}<br>
-			  <br>
-			  <b>{L_041}:</b> {CATSPATH}<br>
-              <!-- IF SECCATSPATH ne '' --><b>{L_814}:</b> {SECCATSPATH}<!-- ENDIF -->
-			</div>
+     
+     <ul class="list-group">
+         <!-- IF COUNTRY ne '' or ZIP ne '' -->
+    <li class="list-group-item"><b>{L_014}:</b> {COUNTRY} ({ZIP})</li>
+         <!-- ENDIF -->
+    <li class="list-group-item"><b>{L_025}:</b> {SHIPPING}, {INTERNATIONAL}</li>
+         
+         <!-- IF SHIPPINGTERMS ne '' -->
+    <li class="list-group-item"><b>{L_25_0215}:</b> {SHIPPINGTERMS}</li>
+         <!-- ENDIF -->
+         
+         
+    <li class="list-group-item"><b>{L_026}:</b> {PAYMENTS}</li>
+         
+         
+         <!-- IF ! B_BUY_NOW_ONLY -->
+    <li class="list-group-item"><b><!-- IF ATYPE eq 1 -->{L_127}<!-- ELSE -->{L_038}<!-- ENDIF -->:</b> {MINBID}</li>
+         <!-- ENDIF -->
+         
+         <li class="list-group-item"><b>{L_111}:</b> {STARTTIME}</li>
+         
+         <li class="list-group-item"><b>{L_112}:</b> {ENDTIME}</li>
+         
+         <li class="list-group-item"><b>{L_113}:</b> {ID}</li>
+         
+         <li class="list-group-item"><!-- IF SECCATSPATH ne '' --><b>{L_814}:</b> {SECCATSPATH}<!-- ENDIF --></li>
+         
+         
+  </ul>
+                
+                
+                
+			
 		  </div>
 		</td>
 	  </tr>
 	</table>
+        
+                      
+                      
+                  </div>
+                </div>       
+
+          </div>  
+        
+      </div>
+        
+        
+        
+        
+        
+        
+        
+        
+<!--        ADDTIONAL INFORMATION-->
+        
+        
+        
+        
+        
+	
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
 	<br>
   </div>
   </div>

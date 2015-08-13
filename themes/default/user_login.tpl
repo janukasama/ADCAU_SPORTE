@@ -1,35 +1,20 @@
-<div class="content">
-	<div class="titTable2">
-		{L_181}
-	</div>
-	<div class="table2">
-<!-- IF ERROR ne '' -->
-		<div class="error-box">
-			{ERROR}
-		</div>
-<!-- ENDIF -->
-		<div class="padding centre">
-        <table width="676" border="0" cellpadding="6" class="centre">
-            <tr>
-                <td width="301">
-                    <h2>{L_862}</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-md-4 col-sm-offset-1 col-md-offset-4">
+            <!--<img class="img-responsive center-block loginimage" src="images/loginlogo.png"</img> -->
                     <form name="user_login" action="{SSLURL}user_login.php" method="post">
-                        <p class="smallpadding">{L_187}<br>
-                        <input type="text" name="username" size="20" maxlength="20" value="{USER}"></p>
-                        <p class="smallpadding">{L_004}<br>
-                        <input type="password" name="password" size="20" maxlength="20" value=""></p>
-                        <p>
-                        <input type="submit" name="input" value="Login" class="button">
-                        <input type="hidden" name="action" value="login">
-                        <input type="checkbox" name="rememberme" value="1">&nbsp;{L_25_0085}</p>
-                        <p><a href="forgotpasswd.php">{L_215}</a></p>
+						<input type="text" name="username" class="form-control" placeholder="username" maxlength="20" required autofocus><br/>
+						<input type="password" class="form-control" placeholder="password" name="password" size="20" maxlength="20" value="" required><br/>
+						
+						<input type="submit" name="input" value="Sign in" class="btn btn-primary btn-block">
+						<input type="hidden" name="action" value="login">
+						
+						<a href="#" class="pull-right need-help"> </a></br>
+						<span>
+						<p class="label label-danger">{ERROR}</p>
+						</span>
                     </form>
-                </td>
-                <td width="339">
-                    {L_863}
-                </td>
-            </tr>
-        </table>
         </div>
-	</div>
+              
+    </div>
 </div>

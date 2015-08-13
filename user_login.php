@@ -118,7 +118,8 @@ if (isset($_POST['action']) && isset($_POST['username']) && isset($_POST['passwo
 			}
 			else
 			{
-				$URL = 'user_menu.php';
+//				$URL = 'user_menu.php';
+                $URL = 'index.php';
 			}
 
 			header('location: ' . $URL);

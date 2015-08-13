@@ -202,9 +202,7 @@ $(document).ready(function(){
 <!-- ENDIF -->
 <div class="content">
 	<div class="tableContent2">
-		<div class="titTable2">
-			{TITLE}
-		</div>
+		
 		<div class="table2">
         	<a name="goto"></a>
 <!-- IF ERROR ne '' -->
@@ -215,24 +213,13 @@ $(document).ready(function(){
 <!-- IF PAGE eq 0 -->
 			<form name="sell" action="{ASSLURL}sell.php" method="post">
             	<input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
-				<table width="100%" border="0" cellpadding="4" cellspacing="0">
+				<table width="100%" border="0" cellpadding="4" cellspacing="0" class="table table-condensed">
 					<tr>
-						<td class="centre" colspan="2">
-                        	<h2 class="underline">{L_865}</h2>
+                        
+						<td class="centre" colspan="2" >
+                        	<h4 class="underline" style="background-color:#5bc0de;height:30px;padding-top:5px;">{L_865}</h2>
 						</td>
-					</tr>
-					<tr>
-						<td align="right" width="25%" valign="middle">
-							<b>{L_287}</b>
-						</td>
-						<td class="rightpan">
-							{CAT_LIST1}<br>
-	<!-- IF CAT_LIST2 ne '' -->
-							{CAT_LIST2}<br>
-	<!-- ENDIF -->
-							[<a href="select_category.php?change=yes">{L_5113}</a>]
-						</td>
-					</tr>
+					</tr>			
 					<tr>
 						<td align="right" width="25%" valign="middle">
 							<b>{L_017}</b>
@@ -263,17 +250,24 @@ $(document).ready(function(){
 					</tr>
 	<!-- IF B_GALLERY -->
 					<tr>
-						<td align="right" width="25%" valign="middle">&nbsp;</td>
-						<td valign="top" class="rightpan">
-							<h3>{L_663}</h3>
+						<td align="" width="25%" valign="middle">&nbsp;</td>
+						<td valign="top" class="" >
+                           
+                            <tr>
+                        
+						<td class="centre" colspan="2" >
+                        	<h4 class="underline" style="background-color:#5bc0de;height:30px;padding-top:5px;">{L_663}</h2>
 							<p>{MAXPICS}</p>
 							[<a href="upldgallery.php" alt="gallery" class="new-window">{L_677}</a>]
                             <input type="hidden" name="numimages" value="{NUMIMAGES}" id="numimages">
+						</td>
+					</tr>	
+							
                         </td>
 					</tr>
 	<!-- ENDIF -->
 					<tr>
-						<th colspan="2" align="center" valign="middle">
+						<th colspan="2" align="center" valign="middle" style="background-color:#ccc;">
 							{L_640}
 						</th>
 					</tr>
@@ -397,9 +391,11 @@ $(document).ready(function(){
 					</tr>
 	<!-- ENDIF -->
 					<tr>
-						<td class="centre" colspan="2">
-                        	<h2 class="underline">{L_864}</h2>
+						
+						<td class="centre" colspan="2" >
+                        	<h4 class="underline" style="background-color:#5bc0de;height:30px;padding-top:5px;">{L_864}</h2>
 						</td>
+					
 					</tr>
 					<tr>
 						<td align="right" width="25%" valign="middle">
@@ -443,10 +439,13 @@ $(document).ready(function(){
 						</td>
 					</tr>
 					<tr>
-						<td class="centre" colspan="2">
-                        	<h2 class="underline">{L_30_0080}</h2>
+						
+						<td class="centre" colspan="2" >
+                        	<h4 class="underline" style="background-color:#5bc0de;height:30px;padding-top:5px;">{L_30_0080}</h2>
 						</td>
-					</tr>
+					</tr>	
+                        	
+						
 					<tr>
 						<td align="right" width="25%" valign="middle">
 							<b>{L_026}</b>
@@ -456,9 +455,16 @@ $(document).ready(function(){
 						</td>
 					</tr>
 					<tr>
-						<td class="centre" colspan="2">
-                        	<h2 class="underline">{L_268}</h2>
+						
+                             
+                        
+						<td class="centre" colspan="2" >
+                        	<h4 class="underline" style="background-color:#5bc0de;height:30px;padding-top:5px;">{L_268}</h2>
 						</td>
+					
+                        	
+                        	
+						
 					</tr>
 	<!-- IF B_MKFEATURED or B_MKBOLD or B_MKHIGHLIGHT -->
                     <tr>
@@ -511,15 +517,19 @@ $(document).ready(function(){
 				
 				<div style="text-align:center">
 					<input type="hidden" value="3" name="action">
-					<input type="submit" name="" value="{L_5189}" class="button">&nbsp;&nbsp;&nbsp;<input type="reset" id="resetbt" value="{L_5190}" class="button">
+					<input type="submit" name="" value="{L_5189}" class="btn btn-success">&nbsp;&nbsp;&nbsp;<input type="reset" id="resetbt" value="{L_5190}" class="btn btn-info">
 				</div>
 			</form>
+            
+            
+            
 <!-- ELSEIF PAGE eq 2 -->
 			<form name="preview" action="{ASSLURL}sell.php" method="post">
             <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
-			<table width="100%" border="0" cellpadding="4" align="center" cellspacing=0>
+			<table width="100%" border="0" cellpadding="4" align="center" cellspacing=0 class="table table-condensed">
 			<tr>
-				<td colspan="2" align="center">{L_046}</td>
+				<td colspan="2" align="center" style="width:100px;height:30px;background-color:#5bc0de;">{L_046}</td>
+                <hr>
 			</tr>
 			<tr>
 				<td width="40%" align="right"  valign="top"><b>{L_017}</b></td>
@@ -634,13 +644,13 @@ $(document).ready(function(){
 			</tr>
 			<tr>
 				<td align="right">{L_004}</td>
-				<td><input type="password" name="password" size="20" maxlength="20" value=""></td>
+				<td><input type="password" name="password" size="20" maxlength="20" value="" class="form-control" style="width:200px;" ></td>
 			</tr>
 	<!-- ENDIF -->
 			</table>
 			<div style="text-align:center; padding-top: 10px;">
 				<input type="hidden" value="4" name="action">
-				<input type="submit" name="" value="{L_2__0037}" class="button">
+				<input type="submit" name="" value="{L_2__0037}" class="btn btn-success">
 			</div>
 			</form>
 <!-- ELSE -->

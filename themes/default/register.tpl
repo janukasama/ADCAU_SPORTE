@@ -1,8 +1,11 @@
 <div class="content">
 	<div class="tableContent2">
-		<div class="titTable2">
-			{L_001}
-		</div>
+        
+        <div class="panel panel-primary" style="margin:0px 70px 0px 70px;">
+                    <div class="panel-heading" style="text-align:center;">{L_001}</div>
+                    <div class="panel-body" style="background-color:#ddd;">
+    
+   
 <!-- IF B_FIRST -->
 	<!-- IF ERROR ne '' -->
 		<div class="error-box">
@@ -12,7 +15,7 @@
 		<div class="table2">
 			<form name="registration" action="{SSLURL}register.php" method="post">
             <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
-				<table width="90%" border="0" cellpadding="4" cellspacing="0">
+				<table width="90%" border="0" cellpadding="4" cellspacing="0" class="table table-condensed">
 					<tr>
 						<td width="40%" valign="top" align="right"><b>{L_002}</b> *</td>
 						<td width="60%">
@@ -133,7 +136,7 @@
         <!-- ENDIF -->
 				</table>
 
-				<table width="90%" border="0" cellpadding="4" cellspacing="0">
+				<table width="90%" border="0" cellpadding="4" cellspacing="0" class="table table-condensed">
 				<tr>
 					<td width="40%" valign="top" align="right"></td>
 					<td width="60%" ><h2>{L_719}</h2></td>
@@ -203,8 +206,8 @@
 				<div style="text-align:center">
 					<p><input type="checkbox" name="terms_check" id="terms_check"> {L_858}</p>
 					<input type="hidden" name="action" value="first">
-					<input type="submit" name="" value="{L_235}" class="button">
-					<input type="reset" name="" value="{L_035}" class="button">
+					<input type="submit" name="" value="{L_235}" class="btn btn-success">
+					<input type="reset" name="" value="{L_035}" class="btn btn-info">
 				</div>
 			</form>
 		</div>
@@ -215,5 +218,8 @@
             <p>{L_860}</p>
         </div>
 <!-- ENDIF -->
+                </div>
+        </div>
+
 	</div>
 </div>

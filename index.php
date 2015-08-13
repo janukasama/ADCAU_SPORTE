@@ -203,6 +203,7 @@ while ($row = $db->fetch())
     }
     $high_bid = ($row['num_bids'] == 0) ? $row['minimum_bid'] : $row['current_bid'];
     $template->assign_block_vars('hotitems', array(
+             'END' => $difference, 
             'ENDS' => $ends_string,
             'ID' => $row['id'],
             'BID' => $system->print_money($high_bid),

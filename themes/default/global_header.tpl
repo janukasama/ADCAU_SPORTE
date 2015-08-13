@@ -66,18 +66,24 @@ $(document).ready(function() {
 </head>
 <body>
 <div class="wrapper rounded-top rounded-bottom">
+    <!--w_bid logo-->
 	<div class="splitbox">
     	<div class="leftside">
-    		<a class="" href="{SITEURL}index.php">{LOGO}</a>
+           <center>
+    		<a class="" href="{SITEURL}index.php"> <img src="images/Logo.png" style="width:80%;height:120px;"</img> </a>
+          </center>
+            
         </div>
     	<div class="rightside">
-        	{BANNER}
+        	<!--{BANNER}-->
+          
         </div>
     </div>
+    
 	<div class="counters">
-        <span class="leftside"><!-- IF B_LOGGED_IN -->{L_200} {YOURUSERNAME}. <a href="{SSLURL}logout.php?">{L_245}</a>
+        <span class="rightside"><!-- IF B_LOGGED_IN -->{L_200} {YOURUSERNAME}</a>
             <!-- ENDIF --></span>
-        <span class="rightside">{HEADERCOUNTER}</span>
+       <!-- <span class="rightside">{HEADERCOUNTER}</span>-->
 	</div>
   <!--remove->
 <!--remove->
@@ -96,7 +102,7 @@ $(document).ready(function() {
     </div>-->
     
     
-     <nav class="navbar navbar-default">
+     <nav class="navbar navbar-inverse">
       <div class="container-flut">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
@@ -114,21 +120,23 @@ $(document).ready(function() {
           <ul class="nav navbar-nav">
               
             <li><a href="{SITEURL}index.php?">{L_166}</a></li>
+          <!--  <li><a href="{SSLURL}logout.php?">{L_245}</a></li>-->
             <!-- IF B_CAN_SELL -->
 			<li><a href="{SITEURL}select_category.php?">{L_028}</a></li>
+           
             <!-- ENDIF -->
            <!-- IF B_LOGGED_IN -->
-<!--
+
             <li><a href="{SITEURL}user_menu.php?">{L_622}</a></li>
             <li><a href="{SSLURL}logout.php?">{L_245}</a></li>
 
--->
+
             
            <!-- ELSE -->
-<!--
+
             <li><a href="{SSLURL}register.php?">{L_235}</a></li>
             <li><a href="{SSLURL}user_login.php?">{L_052}</a></li>
--->
+
               <!--<p>Please Login</p>-->
              <!-- ENDIF -->
              <!-- IF B_BOARDS -->
