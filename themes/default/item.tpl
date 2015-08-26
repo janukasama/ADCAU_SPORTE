@@ -26,10 +26,10 @@ $(document).ready(function() {
 </script>
 <!-- ENDIF -->
 
-<div class="row" style="margin:40px;">
+<div class="row" style="margin:30px -5px 10px -5px ;">
 <!--      panel-->
                
-           <div class="col-md-12 col-sm-12 titTable1" style="text-align:center;">        
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titTable1" style="text-align:center;">        
            <div class="panel panel-primary" style="border:0px;">
             <div class="panel-heading"><b>{TITLE}</b></div>
              <div class="panel-body" >
@@ -43,7 +43,7 @@ $(document).ready(function() {
 <!-- IF B_HASENDED eq false and B_CAN_BUY -->
 	<!-- IF B_NOTBNONLY -->
 				<table width="100%" border=0 cellpadding=2 cellspacing=0 border=1>    
-                <div class="col-md-4 col-sm-4">  
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">  
 				<form name="bid" action="{BIDURL}bid.php" method="post">
 				<tr>
 				  <td width="65%">
@@ -65,7 +65,7 @@ $(document).ready(function() {
 					 <input type="hidden" name="category" value="{CAT_ID}" >
 					 <input type="hidden" name="id" value="{ID}">
                      <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
-					 <input class="btn btn-primary btn-block" type="submit" name="" value="{L_30_0208}">
+					 <input class="btn btn-primary btn-lg" type="submit" name="" value="{L_30_0208}" style="margin:0px -25px 5px -25px; ">
 						</td>
 					  </tr>
 					</table>
@@ -81,6 +81,7 @@ $(document).ready(function() {
 <!-- ENDIF -->
  
              </div>
+               <div class="panel-footer" style="height:5px;background-color:#337ab7;"></div>
                 </div>
     </div>
 </div>

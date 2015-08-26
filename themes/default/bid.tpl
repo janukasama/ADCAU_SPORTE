@@ -10,21 +10,44 @@ $(document).ready(function(){
 });
 </script>
 <!-- ENDIF -->
-<div class="row" style="margin:30px;">
-		<div class="col-md-12 col-sm-12" style="text-align:center;">
-             <div class="panel panel-primary" style="border:0px;" >
-             <div class="panel-heading"><b>{TITLE}</b></div>
-             <div class="panel-body" >
+<div class="content">
+	<div class="tableContent2">
+		
+		
+            
+            
+            
+
+        
+        
+        
+		<div class="table2 padding" style="text-align:left;">
+            
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><!-- IF PAGE eq 1 -->{L_152}<!-- ELSE -->{L_271}<!-- ENDIF --></div>
+                    <div class="panel-body" style="background-color:#d8d8d8;">
 <!-- IF PAGE eq 1 -->
 	<!-- IF ERROR ne '' -->
 			<div class="alert alert-danger">
 				{ERROR}
 			</div>
 	<!-- ENDIF -->
-			<form name="bid" action="{ASSLURL}bid.php" method="post">
+            
+            
+            
+            <div style="background-color:#ddd;height:350px;">
+                
+                
+			<form name="bid" action="{ASSLURL}bid.php" method="post" >
             <input type="hidden" name="csrftoken" value="{_CSRFTOKEN}">
-			<table width="60%" border=0 cellpadding="4" style="text-align:left;" class="table table-hover">
-				<tr>
+			<table class="table table-striped">
+		
+                
+               <tr>
+                    
 					<td><b>{L_154}</b></td>
 					<td>{TITLE}</td>
 				</tr>
@@ -34,13 +57,13 @@ $(document).ready(function(){
 				</tr>
 				<tr>
 					<td><b>{L_156}</b></td>
-					<td><input type="text" size="5" name="bid" id="bid" value="{BID}" class="form-control">
+					<td><input class="form-control" type="text" size="5" name="bid" id="bid" value="{BID}">
 						<!-- IF ATYPE eq 1 -->({L_283}: {NEXT_BID})<!-- ENDIF --></td>
 				</tr>
 	<!-- IF TQTY gt 1 -->
 				<tr>
 					<td><b>{L_284}:</b></td>
-					<td><input type="number" name="qty" id="qty" value="{QTY}" min="1" max="{TQTY}" step="1" class="form-control"></td>
+					<td><input type="number" name="qty" id="qty" value="{QTY}" min="1" max="{TQTY}" step="1"></td>
 				</tr>
 	<!-- ENDIF -->
 	<!-- IF B_USERAUTH -->
@@ -51,25 +74,38 @@ $(document).ready(function(){
 				</tr>
 				<tr>
 					<td><b>{L_004}</b></td>
-					<td><input type="password" name="password" size="20"  value="" class="form-control">
+					<td><input class="form-control"  type="password" name="password" size="20"  value="">
 					</td>
 				</tr>
 	<!-- ENDIF -->
+              
 			</table>
-			<div style="text-align:center; margin-top:20px;">
+			<div class="col-xs-12 col-sm-12" style="text-align:center; margin-top:15px;">
 				<input type="hidden" name="id" value="{ID}">
 				<p>{AGREEMENT}</p>
 				<input type="hidden" name="action" value="bid">
-				<input type="submit" name="Input" value="{L_5199}" class="button btn btn-primary btn-block">
+				<input type="submit" name="Input" value="{L_5199}" class="btn btn-success" style="margin:10px;">
 			</div>
 			</form>
+                 </div>
 <!-- ELSE -->
-                 <div class="col-md-12 col-sm-12">
-			{L_272}&nbsp;
-			{L_699} {BID} {L_700}
-                     </div>
-                 <!-- ENDIF -->
+            <div style="text-align:center;">
+			<a href="{SITEURL}item.php?id={ID}" >{L_699} {BID} {L_700}</a><br>
+                
+                <br>
+             
+                <a class="btn btn-info"style="color:white !important; border-radius:0px;" href="{SITEURL}item.php?id={ID}">{L_138}</a>
+     
+			</div>
+             
+<!-- ENDIF -->
 		</div>
+                    </div>
+                
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+             
+            </div>
 	</div>
-    </div>
 </div>
